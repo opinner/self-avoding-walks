@@ -1,6 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+# SAW kann keine Sackgassen wirklich erkennen und auch keine Randbedingungen
 def bad_saw(N, x=50, y=50):
     
     deadend = 0
@@ -26,6 +28,8 @@ def bad_saw(N, x=50, y=50):
 
             #deadend = np.all([lattice[x+1,y],lattice[x-1,y],lattice[x,y+1],lattice[x,y-1]]==1)
             #print(deadend)
+
+            #Soll Sackgassen erkennen (erster dreckiger Versuch, später mehr)
             if count > 40:
                 break      
     

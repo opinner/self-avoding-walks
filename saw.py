@@ -1,6 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""
+1. Versuch, viele Probleme und noch keine schöne Struktur 
+
+und vermutlich ist python zu langsam
+"""
 
 # SAW kann keine Sackgassen wirklich erkennen und auch keine Randbedingungen
 def bad_saw(N, x=50, y=50):
